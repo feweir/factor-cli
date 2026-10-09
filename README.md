@@ -1,22 +1,23 @@
-# factory CLI
+# factor CLI
 
-Release binaries for `factory`, the command-line tool for
-[Factor](https://factory.dev). Nothing is developed here: every release is
-built, tested and signed by the release workflow of the (private) source
-repository and published to this one.
+Release binaries for `factor`, the command-line tool for
+[Factor](https://getfactor.dev): run a script or a project on a rented GPU
+with one command. Nothing is developed here: every release is built, tested
+and signed by the release workflow of the (private) source repository and
+published to this one.
 
 ## Install
 
 **macOS** (Apple Silicon and Intel)
 
 ```bash
-brew install --cask feweir/tap/factory
+brew install --cask feweir/tap/factor
 ```
 
-**Linux** (x86-64 and ARM64)
+**Linux and macOS** (x86-64 and ARM64)
 
 ```bash
-curl -fsSL https://github.com/feweir/factory-cli/releases/latest/download/install.sh | sh
+curl -fsSL https://getfactor.dev/install.sh | sh
 ```
 
 `.deb` and `.rpm` packages are attached to every release.
@@ -24,11 +25,19 @@ curl -fsSL https://github.com/feweir/factory-cli/releases/latest/download/instal
 **Windows** (x86-64 and ARM64)
 
 ```powershell
-scoop bucket add factory https://github.com/feweir/scoop-bucket
-scoop install factory
+scoop bucket add factor https://github.com/feweir/scoop-bucket
+scoop install factor
 ```
 
-Or download a `.zip` from [Releases](https://github.com/feweir/factory-cli/releases).
+Or download an archive from [Releases](https://github.com/feweir/factory-cli/releases).
+
+Then:
+
+```bash
+factor auth login
+```
+
+Documentation: [getfactor.dev/docs](https://getfactor.dev/docs).
 
 ## Verify a download
 
