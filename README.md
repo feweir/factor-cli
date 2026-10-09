@@ -29,7 +29,7 @@ scoop bucket add factor https://github.com/feweir/scoop-bucket
 scoop install factor
 ```
 
-Or download an archive from [Releases](https://github.com/feweir/factory-cli/releases).
+Or download an archive from [Releases](https://github.com/feweir/factor-cli/releases).
 
 Then:
 
